@@ -1,1 +1,305 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Sena Zadeh's Portfolio" />
+  <meta property="og:description" content="Explore Sena Zadeh's professional journey" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/zadehsena/Portfolio/main/assets/sena-zuko.png" />
+  <meta property="og:url" content="https://zadehsena.github.io/Portfolio/" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter meta tags (optional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sena Zadeh's Portfolio" />
+  <meta name="twitter:description" content="Explore Sena Zadeh's professional journey" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/zadehsena/Portfolio/main/assets/sena-zuko.png" />
+
+  <title>Sena Zadeh</title>
+  <link rel="icon" href="assets/sena-zuko.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Sena Zadeh</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Industry</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Sena Zadeh</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Industry</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="sena-zuko" src="./assets/sena-zuko.png" alt="Sena & Zuko picture" />
+    </div>
+    <div class="section__text fade-in">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Sena Zadeh</h1>
+      <p class="section__text__p2">Fullstack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/SenaZadeh-Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/sena-zadeh/', '_blank')" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="window.open('https://github.com/zadehsena', '_blank')" />
+        <img src="./assets/leetcode.png" alt="My Leetcode profile" class="icon"
+          onclick="window.open('https://leetcode.com/u/senazadeh/', '_blank')" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__header">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container fade-in">
+            <img src="./assets/body-organ.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>6+ years <br />Fullstack Development</p>
+          </div>
+          <div class="details-container fade-in">
+            <img src="./assets/graduate-hat.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>UNC Chapel Hill <br />B.Sc. Computer Science</p>
+          </div>
+          <div class="details-container fade-in">
+            <img src="./assets/experience.png" alt="Education icon" class="icon" />
+            <h3>Certifications</h3>
+            <p>20+ Architectural & Design<br />Professional Certifications</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm Sena! A software engineer from Durham, North Carolina. I developed a passion for
+            technology early on, which led me to pursue a Computer Science degree from the University of North Carolina.
+            After graduating, I began my career at IBM, where I work on innovative projects and contribute to
+            Cloud development.
+
+            Outside of work I am a proud dog dad to my corgi, Zuko, who brings endless joy and energy into my life.
+            Whether I'm exploring new technologies or spending time with Zuko, I always strive to enjoy life to the
+            fullest.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <p class="section__text__header">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container fade-in">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Go</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Javascript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frameworks & Libraries</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Angular</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools & Technologies</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Docker</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Kubernetes</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Terraform</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Database Management</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Redis</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <p class="section__text__header">Browse My Contributions</p>
+    <h1 class="title">Industry</h1>
+    <div class="experience-details-container">
+      <div class="about-containers fade-in">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/ibm.png" alt="IBM Logo" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">IBM MultiCloud SaaS Platform Engineer</h2>
+          <p>Managed CI/CD pipelines integrations for multi-cloud environments<br /><br />2+ Years Experience - Austin,
+            TX</p>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/pearson.png" alt="Pearson Logo" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Pearson+ Mobile eCommerce Engineer</h2>
+          <p>Pearson Base Component Developer for Pearson+ iOS Application<br /><br />2+ Years Experience - Durham, NC
+          </p>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/unc.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">UNC SoM Application & Web Developer</h2>
+          <p>Enhanced legacy web applictions to support data storage requirements<br /><br />4+ Years Experience -
+            Chapel Hill, NC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__header">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container fade-in">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:zadehsena@gmail.com">zadehsena@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/sena-zadeh/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Industry</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Sena Zadeh. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
