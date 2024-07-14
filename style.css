@@ -22,7 +22,7 @@ h3 {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(212, 238, 243);
 }
 
 /* TRANSITION */
@@ -65,7 +65,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: (58, 77, 99);
   text-decoration: none;
   text-decoration-color: white;
 }
